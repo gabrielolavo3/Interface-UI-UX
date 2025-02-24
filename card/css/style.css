@@ -1,0 +1,134 @@
+/* Desktop - Responsividade */
+
+@font-face {
+    font-family: milk;
+    src: url('/fonts/LEMONMILK-BoldItalic.otf');
+}
+
+@font-face {
+    font-family: quick;
+    src: url('/fonts/Quickstyler_PERSONAL_USE_ONLY.otf');
+}
+
+@font-face {
+    font-family: louis;
+    src: url('/fonts/louis.ttf');
+}
+
+:root{
+    --kobicha: #64412bff;
+    --night: #111317ff;
+    --wheat: #f0dbabff;
+    --silver: #cbcbcaff;
+    --outer-space: #45474eff;
+    --platinum: #d9d9d9ff;
+    --silver-2: #bfbfbeff;
+    --khaki: #c8ae94ff;
+}
+
+body
+{    
+    background: linear-gradient(var(--silver-2), var(--outer-space));    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+img
+{
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid var(--night);
+    margin: 10px;
+}
+
+.central
+{
+    width: 30%;
+    background: var(--khaki);
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 15px var(--smoky-black);
+}
+
+hr
+{
+    width: 100%;
+    height: 8px;
+    background-color: var(--night);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+h1
+{
+    text-transform: uppercase;
+    font-family: quick;
+    margin: 10px;
+}
+
+.paragrafo {
+    margin: 10px;
+    font-family: coolvetica;    
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2
+{
+    font-family: 'milk';
+    font-size: 20px;
+    font-weight: 100;
+    margin: 5px;
+}
+
+.icones 
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.icones img 
+{
+    width: 30px;
+    border: none; 
+    padding: 2.5px;   
+}
+
+
+/* Tablet -  Responsividade */
+
+@media (max-width: 1024px) and (min-width: 720px)
+{
+    body
+    {
+        background: var(--kobicha);
+    }
+
+    .central
+    {
+        width: 50%;
+    }
+}
+
+/* Mobile -  Responsividade */
+
+@media(max-width: 720px){
+    body
+    {
+        background: var(--wheat);
+    }
+
+    central
+    {
+        width: 70%;
+    }
+}
